@@ -22,6 +22,12 @@
 						<span class="logo__web">Web</span><span class="logo__studio">Studio</span>
 					</a>
 
+					<button class="mobile-menu__button-open js-open-menu">
+						<svg width="40" height="40">
+							<use href="./images/symbol-defs.svg#icon-menu-open"></use>
+						</svg>
+					</button>
+
 					<ul class="site-nav list">
 						<li>
 							<a href="" class="site-nav__link site-nav__link--current">Студія</a>
@@ -54,6 +60,54 @@
 					</li>
 				</ul>
 			</div>
+		</div>
+
+		<div class="mobile-menu js-menu-container">
+			<button type="button" class="mobile-menu__button-close js-close-menu">
+				<svg width="40" height="40">
+					<use href="./images/symbol-defs.svg#icon-menu-close"></use>
+				</svg>
+			</button>
+
+			<ul class="mobile-nav list">
+				<li class="mobile-nav__item">
+					<a href="" class="mobile-nav__link mobile-nav__link--current">Студія</a>
+				</li>
+				<li class="mobile-nav__item">
+					<a href="./portfolio.html" class="mobile-nav__link">Портфоліо</a>
+				</li>
+				<li class="mobile-nav__item">
+					<a href="" class="mobile-nav__link">Контакти</a>
+				</li>
+			</ul>
+
+			<ul class="mobile-contacts list">
+				<li class="mobile-contacts__item">
+					<a href="mailto:info@devstudio.com" class="mobile-contacts__link">
+						info@devstudio.com
+					</a>
+				</li>
+				<li class="mobile-contacts__item">
+					<a href="tel:+380961111111" class="mobile-contacts__link">
+						+38 096 111 11 11
+					</a>
+				</li>
+			</ul>
+
+			<ul class="mobile-network list">
+				<li>
+					<a href="#" class="mobile-network__link">Instagram</a>
+				</li>
+				<li>
+					<a href="#" class="mobile-network__link">Twitter</a>
+				</li>
+				<li>
+					<a href="#" class="mobile-network__link">Facebook</a>
+				</li>
+				<li>
+					<a href="#" class="mobile-network__link">LinkedIn</a>
+				</li>
+			</ul>
 		</div>
 	</header>
 
@@ -110,7 +164,7 @@
 			</div>
 		</section>
 	
-		<section class="section no-padding">
+		<section class="section no-padding servises">
 			<div class="container">
 				<h2 class="section__title">Чим ми займаємося</h2>
 				<ul class="occupation-list list">
@@ -141,7 +195,11 @@
 				<h2 class="section__title">Наша команда</h2>
 				<ul class="card-list list">
 					<li class="card-list__item">
-						<img class="card-list__img" src="./images/people1.jpg" alt="Учасник Ігор Дем'яненко" width="270">
+						<picture>
+							<source srcset="./images/demyanenko.jpg 1x, ./images/demyanenko@2x.jpg 2x" media="(min-width: 1200px)" />
+							<source srcset="./images/demyanenko-tablet.jpg 1x, ./images/demyanenko-tablet@2x.jpg 2x" media="(min-width: 768px)">
+							<img srcset="./images/demyanenko-mobile.jpg 1x, ./images/demyanenko-mobile@2x.jpg 2x" src="./images/demyanenko-mobile.jpg" alt="Ігор Демяненко" class="card-list__img" />
+						</picture>
 						<h3 class="card-list__title">Ігор Дем'яненко</h3>
 						<p lang="en" class="card-list__paragraph">Product Designer</p>
 						<ul class="network list">
@@ -176,7 +234,11 @@
 						</ul>
 					</li>
 					<li class="card-list__item">
-						<img class="card-list__img" src="./images/people2.jpg" alt="Учасниця Ольга Рєпіна" width="270">
+						<picture>
+							<source srcset="./images/repina.jpg 1x, ./images/repina@2x.jpg 2x" media="(min-width: 1200px)" />
+							<source srcset="./images/repina-tablet.jpg 1x, ./images/repina-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+							<img srcset="./images/repina-mobile.jpg 1x, ./images/repina-mobile@2x.jpg 2x" src="./images/repina-mobile.jpg" alt="Ольга Репіна" class="card-list__img" />
+						</picture>
 						<h3 class="card-list__title">Ольга Рєпіна</h3>
 						<p lang="en" class="card-list__paragraph">Frontend Developer</p>
 						<ul class="network list">
@@ -211,7 +273,11 @@
 						</ul>
 					</li>
 					<li class="card-list__item">
-						<img class="card-list__img" src="./images/people3.jpg" alt="Учасник Микола Тарасов" width="270">
+						<picture>
+							<source srcset="./images/tarasov.jpg 1x, ./images/tarasov@2x.jpg 2x" media="(min-width: 1200px)" />
+							<source srcset="./images/tarasov-tablet.jpg 1x, ./images/tarasov-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+							<img srcset="./images/tarasov-mobile.jpg 1x, ./images/tarasov-mobile@2x.jpg 2x" src="./images/tarasov-mobile.jpg" alt="Микола Тарасов" class="card-list__img" />
+						</picture>
 						<h3 class="card-list__title">Микола Тарасов</h3>
 						<p lang="en" class="card-list__paragraph">Marketing</p>
 						<ul class="network list">
@@ -246,7 +312,11 @@
 						</ul>
 					</li>
 					<li class="card-list__item">
-						<img class="card-list__img" src="./images/people4.jpg" alt="Учасник Михайло Єрмаков" width="270">
+						<picture>
+							<source srcset="./images/yermakov.jpg 1x, ./images/yermakov@2x.jpg 2x" media="(min-width: 1200px)" />
+							<source srcset="./images/yermakov-tablet.jpg 1x, ./images/yermakov-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+							<img srcset="./images/yermakov-mobile.jpg 1x, ./images/yermakov-mobile@2x.jpg 2x" src="./images/yermakov-mobile.jpg" alt="Михайло Єрмаков" class="card-list__img" />
+						</picture>
 						<h3 class="card-list__title">Михайло Єрмаков</h3>
 						<p lang="en" class="card-list__paragraph">UI Designer</p>
 						<ul class="network list">
@@ -341,7 +411,7 @@
 		<div class="container">
 			<div class="footer__arrangement">
 				<div class="side-left">
-					<a href="./index.html" class="logo"><span class="logo__web">Web</span><span class="logo__studio logo__studio--footer">Studio</span></a>
+					<a href="./index.html" class="logo logo--footer"><span class="logo__web">Web</span><span class="logo__studio logo__studio--footer">Studio</span></a>
 			
 					<address class="address">
 						<ul class="address__list list">
@@ -360,7 +430,7 @@
 			
 				<div class="side-centre">
 					<h2 class="side-centre__title">Приєднуйтесь</h2>
-					<ul class="network list">
+					<ul class="network list side-centre__network">
 						<li class="network__item">
 							<a href="" class="network__svg network__svg--background">
 								<svg width="20" height="20">
@@ -471,5 +541,6 @@
 	</div>
 
 	<script src="./js/modal.js"></script>
+	<script src="./js/mobile-menu.js"></script>
 </body>
 </html>

@@ -1,6 +1,13 @@
+.servises {
+	@media (max-width: 768px) {
+		display: none;
+	}
+}
+
+
 .occupation-list {
-	display: flex;
-	gap: 30px;
+	/*display: flex;
+	gap: 30px;*/
 }
 
 .occupation-list__item {

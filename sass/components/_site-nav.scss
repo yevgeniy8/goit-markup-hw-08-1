@@ -1,7 +1,11 @@
 .site-nav {
-	display: flex;
-	gap: 50px;
-	margin-left: 93px;
+	display: none;
+
+	@media (min-width: 768px) {
+		display: flex;
+		gap: 50px;
+		margin-left: 93px;
+	}
 }
 
 .site-nav__link {

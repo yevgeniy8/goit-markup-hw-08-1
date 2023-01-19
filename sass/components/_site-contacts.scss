@@ -1,7 +1,11 @@
 .site-contacts {
-	display: flex;
-	gap: 40px;
-	margin-left: auto;
+	display: none;
+
+	@media (min-width: 768px) {
+		display: flex;
+		gap: 40px;
+		margin-left: auto;
+	}
 }
 
 .site-contacts__link {

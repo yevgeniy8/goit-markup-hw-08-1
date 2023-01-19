@@ -1,10 +1,12 @@
 .clients-card {
 	display: flex;
+	flex-wrap: wrap;
 	gap: 30px;
 }
 
 .clients-card__item {
-	width: 170px;
+	flex-basis: calc((100% - 30px) / 2);
+	/*width: 170px;*/
 	height: 92px;
 }
 
