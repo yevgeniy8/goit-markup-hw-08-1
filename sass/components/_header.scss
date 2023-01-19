@@ -6,6 +6,10 @@
 	height: 60px;
 	display: flex;
 	align-items: center;
+
+	@media (min-width: 786px) {
+		height: 80px;
+	}
 }
 
 .header__nav-content {

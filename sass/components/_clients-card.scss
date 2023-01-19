@@ -8,6 +8,10 @@
 	flex-basis: calc((100% - 30px) / 2);
 	/*width: 170px;*/
 	height: 92px;
+
+	@media (min-width: 786px) {
+		flex-basis: calc((100% - 60px) / 3);;
+	}
 }
 
 .clients-card__svg {

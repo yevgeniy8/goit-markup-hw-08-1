@@ -1,18 +1,27 @@
 .site-contacts {
 	display: none;
 
-	@media (min-width: 768px) {
+	@media (min-width: 786px) {
 		display: flex;
-		gap: 40px;
+		flex-direction: column;
 		margin-left: auto;
 	}
+
+	@media (min-width: 1200px) {
+		display: flex;
+		gap: 40px;
+	}
+}
+
+.site-contacts__item:not(:last-child) {
+	margin-bottom: 10px;
 }
 
 .site-contacts__link {
 	display: flex;
-    align-items: center;
 	justify-content: center;
-	gap: 10px;
+    align-items: center;
+	//gap: 10px;
 	color: var(--paragraph-text-color);
 	fill: currentColor;
 
@@ -29,4 +38,9 @@
 			color: var(--accent-color);
 			fill: currentColor;
 	}
+}
+
+.site-contacts__icon {
+	margin-right: 10px;
+	padding: 0;
 }

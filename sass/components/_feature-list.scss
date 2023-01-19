@@ -1,10 +1,16 @@
 .feature-list {
-	/*display: flex;
-	gap: 30px;*/
+	@media (min-width: 768px) {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 30px;
+	}
 }
 
 .feature-list__item {
 	max-width: 450px;
+	@media (min-width: 768px) {
+		flex-basis: calc((100% - 30px) / 2);
+	}
 }
 
 .feature-list__item:not(:last-child) {
