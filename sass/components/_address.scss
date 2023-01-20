@@ -1,14 +1,21 @@
 .address__list {
 	/*margin-top: 20px;
 	margin-right: 70px;*/
-	margin-bottom: 60px;
+	@media (max-width: 1199px) {
+		margin-bottom: 60px;
+	}
+}
+
+.address__item {
+	height: 16px;
 }
 
 .address__item + .address__item {
-	margin-top: 9px;
+	margin-top: 12px;
 }
 
 .address__street {
+	margin-top: 12px;
 	color: var(--title-text-color);
 
 	line-height: 1.71;
