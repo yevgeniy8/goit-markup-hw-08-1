@@ -40,6 +40,10 @@
 	font-size: 14px;
 	line-height: 1.14;
 	text-transform: uppercase;
+
+	@media (max-width: 767px) {
+		text-align: center;
+	}
 }
 
 .feature-list__paragraph {

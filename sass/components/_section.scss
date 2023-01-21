@@ -1,6 +1,11 @@
 .section {
 	padding-top: 60px;
 	padding-bottom: 60px;
+
+	@media (min-width: 1200px) {
+		padding-top: 94px;
+		padding-bottom: 94px;
+	}
 }
 
 .section.no-padding {
@@ -12,11 +17,13 @@
 
 	color: var(--primary-text-color);
 
-	font-size: 24px;
+	font-size: 28px;
 	line-height: 1.18;
 	text-align: center;
 
 	@media (min-width: 1200px) {
 		font-size: 36px;
+		margin-bottom: 50px;
+		line-height: 1.17;
 	}
 }
