@@ -1082,6 +1082,12 @@ p {
   fill: currentColor;
 }
 
+.mobile-contacts__link--tel {
+  font-size: 34px;
+  line-height: 1.18;
+  color: var(--accent-color);
+}
+
 .mobile-network {
   display: -webkit-box;
   display: -ms-flexbox;
